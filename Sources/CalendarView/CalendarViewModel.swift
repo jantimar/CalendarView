@@ -78,7 +78,7 @@ final public class CalendarViewModel: ObservableObject {
     var formattedDate: String { "\(current.month). \(current.year)" }
     private(set) lazy var weekdaySymbols: [String] = DateFormatter().shortWeekdaySymbols
 
-    init(
+    public init(
         today: Date = .init(),
         heighlighted: [Date] = .init(),
         selectedDate: Date? = nil
