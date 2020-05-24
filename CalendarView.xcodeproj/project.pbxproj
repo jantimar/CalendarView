@@ -23,7 +23,7 @@
 /* Begin PBXBuildFile section */
 		A4F60C62247A6D9B008BEC6E /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C61247A6D9B008BEC6E /* WeekView.swift */; };
 		A4F60C65247A6DDC008BEC6E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C64247A6DDC008BEC6E /* MonthView.swift */; };
-		A4F60C67247A6E1E008BEC6E /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C66247A6E1E008BEC6E /* CalendarModel.swift */; };
+		A4F60C67247A6E1E008BEC6E /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */; };
 		OBJ_25 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CalendarView.swift */; };
 		OBJ_26 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DayView.swift */; };
 		OBJ_27 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Date+Extension.swift */; };
@@ -53,7 +53,7 @@
 /* Begin PBXFileReference section */
 		A4F60C61247A6D9B008BEC6E /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		A4F60C64247A6DDC008BEC6E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
-		A4F60C66247A6E1E008BEC6E /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		"CalendarView::CalendarView::Product" /* CalendarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CalendarView::CalendarViewTests::Product" /* CalendarViewTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = CalendarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -126,7 +126,6 @@
 				OBJ_13 /* Tests */,
 				OBJ_17 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -145,7 +144,7 @@
 				OBJ_11 /* Extensions */,
 				A4F60C61247A6D9B008BEC6E /* WeekView.swift */,
 				A4F60C64247A6DDC008BEC6E /* MonthView.swift */,
-				A4F60C66247A6E1E008BEC6E /* CalendarModel.swift */,
+				A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */,
 			);
 			name = CalendarView;
 			path = Sources/CalendarView;
@@ -217,7 +216,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +235,7 @@
 			buildActionMask = 0;
 			files = (
 				A4F60C62247A6D9B008BEC6E /* WeekView.swift in Sources */,
-				A4F60C67247A6E1E008BEC6E /* CalendarModel.swift in Sources */,
+				A4F60C67247A6E1E008BEC6E /* CalendarViewModel.swift in Sources */,
 				A4F60C65247A6DDC008BEC6E /* MonthView.swift in Sources */,
 				OBJ_25 /* CalendarView.swift in Sources */,
 				OBJ_26 /* DayView.swift in Sources */,
