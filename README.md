@@ -1,2 +1,3 @@
 # CalendarView
-CalendarView component in SwiftUI
+
+A description of this package.
