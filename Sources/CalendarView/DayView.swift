@@ -12,16 +12,18 @@ struct Day {
 struct DayView: View {
     let day: Day
 
+    @Environment(\.calendarStyle) private var style: CalendarStyleProtocol
+
     var body: some View {
         ZStack {
             Text("\(day.number)")
                 .font(.system(size: 14))
-                .foregroundColor(day.isCurrent ? .blue : .none)
+                .foregroundColor(day.isCurrent ? style.currentDay : style.day)
                 .frame(width: 30, height: 30)
                 .overlay(
                     Circle()
                         .stroke(
-                            Color.blue,
+                            style.selected,
                             lineWidth: day.isSelected ? 1 : 0
                     )
             )
@@ -29,11 +31,12 @@ struct DayView: View {
                 Circle()
                     .frame(width: 4, height: 4)
                     .offset(x: 0, y: 12)
-                    .foregroundColor(.blue)
+                    .foregroundColor(style.heighlighted)
             }
         }
-        .opacity(day.isEnabled ? 1 : 0.25)
         .padding(4)
+        .background(style.background)
+        .opacity(day.isEnabled ? 1 : 0.25)
         .onTapGesture(perform: day.onSelect)
     }
 }
