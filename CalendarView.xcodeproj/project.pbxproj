@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		A466A0812492D9C00047605C /* CalendarStyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466A0802492D9C00047605C /* CalendarStyleProtocol.swift */; };
+		A466A0832492DA1A0047605C /* CalendarStyleKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466A0822492DA1A0047605C /* CalendarStyleKey.swift */; };
 		A4F60C62247A6D9B008BEC6E /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C61247A6D9B008BEC6E /* WeekView.swift */; };
 		A4F60C65247A6DDC008BEC6E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C64247A6DDC008BEC6E /* MonthView.swift */; };
 		A4F60C67247A6E1E008BEC6E /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		A466A0802492D9C00047605C /* CalendarStyleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyleProtocol.swift; sourceTree = "<group>"; };
+		A466A0822492DA1A0047605C /* CalendarStyleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyleKey.swift; sourceTree = "<group>"; };
 		A4F60C61247A6D9B008BEC6E /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		A4F60C64247A6DDC008BEC6E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A466A0802492D9C00047605C /* CalendarStyleProtocol.swift */,
+				A466A0822492DA1A0047605C /* CalendarStyleKey.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				A4F60C67247A6E1E008BEC6E /* CalendarViewModel.swift in Sources */,
 				A4F60C65247A6DDC008BEC6E /* MonthView.swift in Sources */,
 				OBJ_25 /* CalendarView.swift in Sources */,
+				A466A0832492DA1A0047605C /* CalendarStyleKey.swift in Sources */,
 				OBJ_26 /* DayView.swift in Sources */,
 				OBJ_27 /* Date+Extension.swift in Sources */,
 			);
