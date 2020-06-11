@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A466A0812492D9C00047605C /* CalendarStyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466A0802492D9C00047605C /* CalendarStyleProtocol.swift */; };
 		A4F60C62247A6D9B008BEC6E /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C61247A6D9B008BEC6E /* WeekView.swift */; };
 		A4F60C65247A6DDC008BEC6E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C64247A6DDC008BEC6E /* MonthView.swift */; };
 		A4F60C67247A6E1E008BEC6E /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A466A0802492D9C00047605C /* CalendarStyleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyleProtocol.swift; sourceTree = "<group>"; };
 		A4F60C61247A6D9B008BEC6E /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		A4F60C64247A6DDC008BEC6E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		A4F60C66247A6E1E008BEC6E /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A466A07F2492D9AE0047605C /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A466A0802492D9C00047605C /* CalendarStyleProtocol.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
 		OBJ_11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 		OBJ_8 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				A466A07F2492D9AE0047605C /* Style */,
 				OBJ_9 /* CalendarView.swift */,
 				OBJ_10 /* DayView.swift */,
 				OBJ_11 /* Extensions */,
@@ -234,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				A466A0812492D9C00047605C /* CalendarStyleProtocol.swift in Sources */,
 				A4F60C62247A6D9B008BEC6E /* WeekView.swift in Sources */,
 				A4F60C67247A6E1E008BEC6E /* CalendarViewModel.swift in Sources */,
 				A4F60C65247A6DDC008BEC6E /* MonthView.swift in Sources */,
