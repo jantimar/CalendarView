@@ -7,7 +7,7 @@ public struct CalendarView: View {
         VStack {
             header
             weekdaySymbols
-            MonthView(weeks: model.current.weeks)
+            MonthView(weeks: viewModel.current.weeks)
                 .frame(maxWidth: .infinity)
                 .animation(.default)
         }
@@ -19,14 +19,14 @@ public struct CalendarView: View {
 
     private var header: some View {
         HStack {
-            Button(action: model.previousPage) {
+            Button(action: viewModel.previousPage) {
                 Text(" < ")
                     .fontWeight(.bold)
             }
             Spacer()
-            Text(model.formattedDate)
+            Text(viewModel.formattedDate)
             Spacer()
-            Button(action: model.nextPage) {
+            Button(action: viewModel.nextPage) {
                 Text(" > ")
                     .fontWeight(.bold)
             }
@@ -35,7 +35,7 @@ public struct CalendarView: View {
 
     private var weekdaySymbols: some View {
         HStack {
-            ForEach(model.weekdaySymbols, id: \.self) {
+            ForEach(viewModel.weekdaySymbols, id: \.self) {
                 Text($0)
                     .font(.system(size: 12))
                     .frame(maxWidth: .infinity)
