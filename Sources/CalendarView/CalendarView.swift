@@ -10,6 +10,16 @@ public struct CalendarView: View {
             MonthView(weeks: viewModel.current.weeks)
                 .frame(maxWidth: .infinity)
                 .animation(.default)
+                .gesture(
+                    DragGesture(minimumDistance: 30)
+                        .onChanged {
+                            switch $0.translation.width {
+                            case 30...: self.viewModel.nextPage()
+                            case ..<(-30): self.viewModel.previousPage()
+                            default: break
+                            }
+                        }
+                )
         }
     }
 
