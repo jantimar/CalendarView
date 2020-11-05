@@ -2,6 +2,8 @@ import SwiftUI
 
 public struct CalendarView: View {
     @ObservedObject public var viewModel: CalendarViewModel
+    @Environment(\.calendarStyle) private var style: CalendarStyleProtocol
+    private let gestureTreshold: CGFloat =  50
 
     public var body: some View {
         VStack {
@@ -11,11 +13,11 @@ public struct CalendarView: View {
                 .frame(maxWidth: .infinity)
                 .animation(.default)
                 .gesture(
-                    DragGesture(minimumDistance: 30)
+                    DragGesture(minimumDistance: gestureTreshold)
                         .onChanged {
                             switch $0.translation.width {
-                            case 30...: self.viewModel.nextPage()
-                            case ..<(-30): self.viewModel.previousPage()
+                            case gestureTreshold...: viewModel.nextPage()
+                            case ..<(-gestureTreshold): viewModel.previousPage()
                             default: break
                             }
                         }
@@ -30,15 +32,17 @@ public struct CalendarView: View {
     private var header: some View {
         HStack {
             Button(action: viewModel.previousPage) {
-                Text(" < ")
-                    .fontWeight(.bold)
+                Text(style.previousPage)
+                    .foregroundColor(style.button)
+                    .padding(.horizontal, style.buttonPedding)
             }
             Spacer()
             Text(viewModel.formattedDate)
             Spacer()
             Button(action: viewModel.nextPage) {
-                Text(" > ")
-                    .fontWeight(.bold)
+                Text(style.nextPage)
+                    .foregroundColor(style.button)
+                    .padding(.horizontal, style.buttonPedding)
             }
         }
     }
