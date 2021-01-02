@@ -1,20 +1,20 @@
 import SwiftUI
 
-struct Day {
-    let number: Int
-    var isHeighlighted = false
-    var isSelected = false
-    var isEnabled = true
-    var isCurrent = false
-    var onSelect: (() -> Void) = {}
+public struct Day {
+    public let number: Int
+    public var isHeighlighted = false
+    public var isSelected = false
+    public var isEnabled = true
+    public var isCurrent = false
+    public var onSelect: (() -> Void) = {}
 }
 
-struct DayView: View {
-    let day: Day
+public struct DayView: View {
+    public let day: Day
 
     @Environment(\.calendarStyle) private var style: CalendarStyleProtocol
 
-    var body: some View {
+    public var body: some View {
         ZStack {
             Text("\(day.number)")
                 .font(.system(size: 14))

@@ -1,14 +1,14 @@
 import SwiftUI
 
-struct Week: Identifiable {
-    let id = UUID()
-    let days: [Day]
+public struct Week: Identifiable {
+    public let id = UUID()
+    public let days: [Day]
 }
 
-struct WeekView: View {
+public struct WeekView: View {
     let week: Week
 
-    var body: some View {
+    public var body: some View {
         HStack {
             ForEach(week.days, id: \.number) {
                 DayView(day: $0)

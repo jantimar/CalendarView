@@ -146,3 +146,17 @@ final public class CalendarViewModel: ObservableObject {
         )
     }
 }
+
+// MARK: - Calendar public API
+public extension CalendarViewModel {
+
+    /// Return `Week` from current selected month
+    /// - Parameter index: Index of week in current monht
+    /// - Returns: Week in current month if exist
+    func week(of index: Int) -> Week? {
+        let weeks = current.weeks
+
+        guard weeks.count > index else { return nil }
+        return weeks[index]
+    }
+}

@@ -1,9 +1,9 @@
 import SwiftUI
 
-struct MonthView: View {
-    let weeks: [Week]
+public struct MonthView: View {
+    public let weeks: [Week]
 
-    var body: some View {
+    public var body: some View {
         VStack {
             ForEach(weeks, content: WeekView.init(week:))
         }
