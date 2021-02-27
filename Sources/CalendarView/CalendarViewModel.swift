@@ -47,10 +47,10 @@ struct Page {
 
     private var previousMonthDays: Int {
         if month == 1 {
-            return Date(year: 12, month: year - 1)?
+            return Date(year: year - 1, month: 12)?
                 .numberOfDaysInMonth ?? 0
         } else {
-            return Date(year: month - 1, month: year)?
+            return Date(year: year, month: month - 1)?
                 .numberOfDaysInMonth ?? 0
         }
     }
